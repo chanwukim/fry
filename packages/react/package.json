@@ -1,0 +1,47 @@
+{
+  "name": "@fry/react",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "test:ci": "vitest run",
+    "lint": "eslint --fix",
+    "clean": "rm -rf node_modules dist .turbo"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@fry/eslint-config": "workspace:*",
+    "@fry/typescript-config": "workspace:*",
+    "@testing-library/react": "^16.0.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "happy-dom": "^15.7.3",
+    "tsup": "^8.2.4",
+    "typescript": "*",
+    "vitest": "^2.0.5"
+  }
+}

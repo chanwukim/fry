@@ -1,0 +1,10 @@
+{
+  "extends": "@fry/typescript-config/react.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
