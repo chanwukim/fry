@@ -29,7 +29,7 @@ pnpm add {name} --filter {workspace}
 
 - 주로 dev, watch 등의 장기 실행 작업에 사용됩니다.
 
-```json
+```js
 {
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
