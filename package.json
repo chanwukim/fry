@@ -4,9 +4,9 @@
   "scripts": {
     "prepare": "husky",
     "build": "turbo build",
-    "build:p": "turbo build --filter './packages/*'",
+    "build:pkg": "turbo build --filter './packages/*'",
     "dev": "turbo dev",
-    "dev:play": "pnpm --filter @fry/playground dev",
+    "dev:web": "pnpm --filter @fry/web dev",
     "test": "turbo run test",
     "test:ci": "turbo run test:ci",
     "lint": "turbo lint",
